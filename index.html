@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Bunting Paints</title>
+</head>
+<body>
+
+    <!-- header -->
+
+    <header>
+        <button class="menu-button" aria-label="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,300,150">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
+            </svg>
+        </button>
+        <div class="header-logo">
+            <img src="assets/Brand Logo.png" alt="The words 'bunting paints' with a bunting bird perched on the dot of the 'I' in bunting">
+        </div>
+    </header>
+
+    <!-- off screen menu -->
+
+    <div class="off-screen-menu">
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#products">Our Products</a></li>
+            <li class="accordion"><button>Find a Store</button></li>
+                <div class="panel">
+                    <ul>
+                        <li><a href="">Deerfoot Meadows</a></li>
+                        <li><a href="">Shawnessy</a></li>
+                        <li><a href="">Macleod</a></li>
+                    </ul>
+                </div>
+            <li><a href="">Resources</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- hero section -->
+    
+    <main>
+        <section class="hero-container">
+            <span class="hero-image" role="img" aria-label="person painting"></span>
+            <div class="hero-text">
+                <h1>The Right Products for Your Passsion</h1>
+                <h2>Quality paint for all skill levels</h2>
+            </div>
+        </section>
+
+    <!-- card section -->
+
+        <section class="products-container" id="products">
+            <h2>Explore our Products</h2>
+            <ul class="card-container">
+                <li class="card">
+                    <div class="image-container">
+                        <img src="assets/acrylic.jpg" alt="a blue and orange acrylic paint pour art piece">
+                    </div>
+                    <div class="card-content">
+                        <h3>Acrylics</h3>
+                        <p>Bunting acrylic paints stand out for their exceptional versatility, offering artists vibrant colors with a quick-drying formula that ensures seamless layering and impeccable blending for every masterpiece.</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container">
+                        <img src="assets/oil.jpg" alt="wet pink and grey oil paint smeared on glass with a palette knife">
+                    </div>
+                    <div class="card-content">
+                        <h3>Oils</h3>
+                        <p>Bunting oil paints boast a unique blend of rich pigments and smooth consistency, elevating every brushstroke with unparalleled depth and vibrancy.</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container">
+                        <img src="assets/watercolour.jpg" alt="a white palette tray with different colors of watercolor paint in each square well">
+                    </div>
+                    <div class="card-content">
+                        <h3>Watercolours</h3>
+                        <p>Bunting watercolor paints captivate with their exquisite transparency and vibrant hues, offering artists unparalleled control and luminosity in every stroke.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer-container">
+        <div class="copyright">
+            &copy; Bunting Paints <span id="year"></span>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

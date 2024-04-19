@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: 0;
+    list-style-type: none;
+    --bblue: #214080;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* header */
+
+header {
+    background-color: var(--bblue);
+    display: flex;
+    height: 100%;
+}
+
+.menu-button {
+    cursor: pointer;
+}
+
+.menu-button svg {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    padding: 15px;
+}
+
+.header-logo {
+    margin: auto;
+}
+
+.header-logo img {
+    width: 150px;
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* off screen menu */
+
+.off-screen-menu {
+    background-color: var(--bblue);
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    top: 1;
+    left: -301px;
+    transition: .3s ease;
+}
+
+.main-menu li {
+    padding: 15px 15px 15px 30px;
+    border-top: 1px solid #becae1;
+    background-color: var(--bblue);
+    color: white;
+}
+
+.off-screen-menu.active {
+    left: 0;
+}
+
+/* menu accordion */
+
+.accordion {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.accordion button {
+    cursor: pointer;
+    background-color: var(--bblue);
+    color: white;
+    font-size: 16px;
+}
+
+.accordion:after {
+    content: '\203a';
+    font-size: 25px;
+    margin-top: -5px;
+    color: white;
+    float: right;
+    transition: transform .15s ease-in-out;
+}
+
+.accordion.active:after {
+    transform: rotate(90deg);
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel ul {
+    padding-bottom: 15px;
+}
+
+.panel li {
+    border: none;
+    padding: 5px 0 5px 60px;
+}
+
+/* hero section */
+
+.hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.5)), url("../assets/paintbrush.webp");
+    height: 35rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+
+.hero-text {
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero-text h1 {
+    padding-bottom: 15px;
+}
+
+.hero-text h2 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/* card section */
+
+.products-container {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.products-container h2 {
+    padding-top: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 20px 30px;
+}
+
+.card {
+    background-color: white;
+    width: 24rem;
+    flex: 1 1 384px;
+    box-shadow: 0rem 0.125rem 1.5rem rgba(0, 0, 0, 0.164);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+/* about section */
+
+.about {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 3rem;
+}
+
+.about h2 {
+    padding: 14px 0 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content div {
+    width: 50%;
+    flex: 1 1 400px;
+}
+
+.about-content img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--bblue);
+    color: white;
+    height: 100%;
+    margin-top: 14px;
+}
+
+.copyright {
+    padding: 30px;
+}
